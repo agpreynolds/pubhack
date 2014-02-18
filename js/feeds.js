@@ -1,7 +1,7 @@
 var feeds = feeds || {
 	requestNews : function(tweet,callback) {
 		keywords = tweet.keywords.join(',');
-		var feed = new google.feeds.Feed("https://news.google.com/news/feeds?q=" + keywords + "&output=rss&safe=on");
+		var feed = new google.feeds.Feed("https://news.google.com/news/feeds?q=" + keywords + ",disaster,tragedy,accident,crisis&output=rss&safe=on");
 		feed.load(function(result) {
 	        if (!result.error) {
 				tweet.article = result.feed.entries[0];

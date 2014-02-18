@@ -50,7 +50,26 @@ return array(
 	"tragedy",
 	"crisis",
 	"accident",
-	"mean"
+	"mean",
+	"confused",
+	"late",
+	"want",
+	"fear",
+	"old",
+	"not",
+	"little",
+	"big",
+	"can't",
+	"fit",
+	"wish",
+	"took",
+	"run",
+	"realise",
+	"realize",
+	"rain",
+	"weather",
+	"crashing",
+	"stupid"
 );
 
 ?>

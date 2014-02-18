@@ -1,6 +1,9 @@
 var twitter = twitter || {
-	postStatus : function() {
-		
+	postStatus : function(tweet) {
+		$.post('/php/reply.php',tweet)
+			.done(function(response){
+				console.log('Reply logged successfully');
+			});
 	},
 	getStatuses : function() {
 		var self = twitter;
@@ -13,10 +16,12 @@ var twitter = twitter || {
 				$(self.tweets).each(function(){
 					if (this.keywords.length) {
 						feeds.requestNews(this,function(tweet){
-							$.get('/php/output.php',tweet)
-								.done(function(response){
-									$('#container').prepend(response);
-								});
+							if ( !$('#'+tweet.id).length ) {
+								$.get('/php/output.php',tweet)
+									.done(function(response){
+										$('#container').prepend(response);
+									});
+							}
 						});
 					}
 				});
@@ -26,5 +31,5 @@ var twitter = twitter || {
 
 $(document).ready(function(){
 	twitter.getStatuses();
-	setTimeout(twitter.getStatuses,30000);
+	setTimeout(twitter.getStatuses,15000);
 });

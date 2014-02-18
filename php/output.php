@@ -1,4 +1,4 @@
-<div class="entry">
+<div class="entry" id="<?php echo $_REQUEST['id']; ?>">
 	<article class="twitterFeed">
 		<p><?php echo $_REQUEST['author']; ?></p>
 		<p><?php echo $_REQUEST['text']; ?></p>
