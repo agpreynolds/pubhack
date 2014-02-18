@@ -13,7 +13,10 @@ var twitter = twitter || {
 				$(self.tweets).each(function(){
 					if (this.keywords.length) {
 						feeds.requestNews(this,function(tweet){
-							console.log(tweet);
+							$.get('/php/output.php',tweet)
+								.done(function(){
+									$('#x').prepend(response);
+								});
 						});
 					}
 				});
