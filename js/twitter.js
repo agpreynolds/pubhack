@@ -14,8 +14,8 @@ var twitter = twitter || {
 					if (this.keywords.length) {
 						feeds.requestNews(this,function(tweet){
 							$.get('/php/output.php',tweet)
-								.done(function(){
-									$('#x').prepend(response);
+								.done(function(response){
+									$('#container').prepend(response);
 								});
 						});
 					}
