@@ -1,0 +1,32 @@
+
+
+div#twitterFeed, article#news
+{
+	display: inline-block;
+	margin: 2em, 6em;
+	padding: 1em;
+	border: solid black;
+}
+
+div#twitterFeed
+{
+	width: 20em;
+}
+
+article#news
+{
+	width: 75em;
+}
+
+
+/*Reference
+element.class
+element#id
+
+spacing: vertical horizontal
+spacing: top horizontal bottom
+spacing: top right bottom left
+
+text-shadow: offset-x offset-y blur-radius colour
+box-shadow: offset-x offset-y blur-radius spread-radius colour
+*/
