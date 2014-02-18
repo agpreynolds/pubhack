@@ -27,7 +27,16 @@ return array(
 	"murder",
 	"missing",
 	"lost",
-	"hate"
+	"hate",
+	"horrible",
+	"happy",
+	"finally",
+	"disgust",
+	"starving",
+	"starve",
+	"stuck",
+	"clean",
+	"alive"
 );
 
 ?>
