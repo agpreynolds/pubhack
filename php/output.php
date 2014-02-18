@@ -1,10 +1,13 @@
 <div class="entry">
 	<article class="twitterFeed">
-		<?php echo $_REQUEST['text']; ?>
-		<section></section>
-		<section></section>
+		<p><?php echo $_REQUEST['author']; ?></p>
+		<p><?php echo $_REQUEST['text']; ?></p>
+		<p><?php echo $_REQUEST['date']; ?></p>		
 	</article>
 	<article class="news">
-		News
+		<h2><?php echo $_REQUEST['article']['title']; ?></h2>
+		<p><?php echo $_REQUEST['article']['contentSnippet']; ?></p>
+		<a href="<?php echo $_REQUEST['article']['link']; ?>" target="_blank">View Article</a>
+		<p><?php echo $_REQUEST['article']['publishedDate']; ?></p>
 	</article>
 </div>

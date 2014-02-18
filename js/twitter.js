@@ -25,5 +25,6 @@ var twitter = twitter || {
 }
 
 $(document).ready(function(){
+	twitter.getStatuses();
 	setTimeout(twitter.getStatuses,30000);
 });

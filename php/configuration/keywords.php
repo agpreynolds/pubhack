@@ -21,7 +21,13 @@ return array(
 	"awkward",
 	"snow",
 	"fix",
-	"a"
+	"dying",
+	"kill",
+	"dead",
+	"murder",
+	"missing",
+	"lost",
+	"hate"
 );
 
 ?>
