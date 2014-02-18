@@ -20,7 +20,8 @@ return array(
 	"life",
 	"awkward",
 	"snow",
-	"fix"
+	"fix",
+	"a"
 );
 
 ?>

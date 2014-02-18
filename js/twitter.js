@@ -12,9 +12,15 @@ var twitter = twitter || {
 
 				$(self.tweets).each(function(){
 					if (this.keywords.length) {
-						console.log(this.keywords);
+						feeds.requestNews(this,function(tweet){
+							console.log(tweet);
+						});
 					}
 				});
 			});
 	}
 }
+
+$(document).ready(function(){
+	setTimeout(twitter.getStatuses,30000);
+});
