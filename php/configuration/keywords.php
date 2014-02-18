@@ -29,7 +29,6 @@ return array(
 	"lost",
 	"hate",
 	"horrible",
-	"happy",
 	"finally",
 	"disgust",
 	"starving",
@@ -38,7 +37,20 @@ return array(
 	"clean",
 	"alive",
 	"force",
-	"forcing"
+	"forcing",
+	"lame",
+	"cruel",
+	"horrid",
+	"mean",
+	"disgusting",
+	"broken",
+	"devastated",
+	"disaster",
+	"tragic",
+	"tragedy",
+	"crisis",
+	"accident",
+	"mean"
 );
 
 ?>
