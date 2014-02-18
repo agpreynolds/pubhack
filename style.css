@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+  background-color: #b5c517;
+  color: white;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif; }
+
+.entry {
+  display: inline-block;
+  margin: 1em;
+  border: solid black; }
+
+.twitterFeed, .news {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em;
+  border: solid black; }
+
+.twitterFeed {
+  width: 15em; }
+
+.news {
+  width: 35em; }
+
+/*Reference
+element.class
+element#id
+
+spacing: all
+spacing: vertical horizontal
+spacing: top horizontal bottom
+spacing: top right bottom left
+
+text-shadow: offset-x offset-y blur-radius colour
+box-shadow: offset-x offset-y blur-radius spread-radius colour
+*/
