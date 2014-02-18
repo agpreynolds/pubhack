@@ -36,7 +36,9 @@ return array(
 	"starve",
 	"stuck",
 	"clean",
-	"alive"
+	"alive",
+	"force",
+	"forcing"
 );
 
 ?>
