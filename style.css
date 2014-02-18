@@ -1,23 +1,25 @@
 body {
   text-align: center;
-  background-color: #818c10;
-  color: white;
+  background-color: #A8DBA8;
+  color: #444;
   font-family: Futura, "Trebuchet MS", Arial, sans-serif; }
 
 h1 {
-  text-shadow: 0px 0px 20px black; }
+  text-shadow: 0px 0px 20px #CCC; }
 
 .entry {
   display: inline-block;
   margin: 1em;
-  border: solid white;
-  border-radius: 5px; }
+  border: #000;
+  border-radius: 5px; 
+  margin-bottom: 2em;
+}
 
 .twitterFeed, .news {
   display: inline-block;
   margin: 1em;
   padding: 1em;
-  border: solid black; }
+  border-bottom: solid black 0.5em; }
 
 .twitterFeed {
   width: 15em; }
