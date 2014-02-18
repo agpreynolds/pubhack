@@ -1,21 +1,37 @@
+$green: #B5C517;
+$font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 
+body
+{
+	text-align: center;
+	background-color: $green;
+	color: white;
+	font-family: $font-family;
+}
 
-div#twitterFeed, article#news
+.entry
 {
 	display: inline-block;
-	margin: 2em, 6em;
+	margin: 1em;
+	border: solid black;
+}
+
+.twitterFeed, .news
+{
+	display: inline-block;
+	margin: 1em;
 	padding: 1em;
 	border: solid black;
 }
 
-div#twitterFeed
+.twitterFeed
 {
-	width: 20em;
+	width: 15em;
 }
 
-article#news
+.news
 {
-	width: 75em;
+	width: 35em;
 }
 
 
@@ -23,6 +39,7 @@ article#news
 element.class
 element#id
 
+spacing: all
 spacing: vertical horizontal
 spacing: top horizontal bottom
 spacing: top right bottom left
