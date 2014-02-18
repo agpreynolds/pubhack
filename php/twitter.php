@@ -5,7 +5,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/php/libraries/twitter/TwitterAPIExcha
 $config = require_once($_SERVER['DOCUMENT_ROOT'] . '/php/configuration/twitter.php');
 
 $url = "https://api.twitter.com/1.1/search/tweets.json";
-$getField = '?q=firstworldproblems&count=20';
+$getField = '?q=firstworldproblems&count=5';
 $requestMethod = 'GET';
 
 $twitter = new TwitterAPIExchange($config);

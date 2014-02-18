@@ -3,23 +3,14 @@
 	$matches=array("hunger","hungry","wet","water","hot","sunny","heat","windy","thunder","lighting","cut","injury");
 
 	foreach ($matches as $match) { 
-<<<<<<< HEAD
-		$datastring = preg_match("/$match/", "hi it is very hot wet to day");
-=======
 		$datastring = preg_match("/$match/", "hi it is very hot windy to day");
->>>>>>> origin/UI
 		if ($datastring) {
 			$keyword[]=$match;
 		}
 		
 	}
 	
-	
-	
 	newsFinder($keyword);
-<<<<<<< HEAD
-=======
-
 
 	function newsFinder($keyword)
 	{
@@ -50,6 +41,5 @@
 	);
 	echo json_encode($response);
 	}
->>>>>>> origin/UI
 	
 ?>
