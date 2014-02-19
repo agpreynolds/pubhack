@@ -8,6 +8,8 @@ var twitter = twitter || {
 	getStatuses : function() {
 		var self = twitter;
 
+		setTimeout(self.getStatuses,15000);
+
 		$.get('/php/twitter.php')
 			.done(function(response){
 				response = JSON.parse(response);
@@ -29,7 +31,4 @@ var twitter = twitter || {
 	}
 }
 
-$(document).ready(function(){
-	twitter.getStatuses();
-	setTimeout(twitter.getStatuses,15000);
-});
+$(document).ready(twitter.getStatuses);
